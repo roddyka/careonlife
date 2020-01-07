@@ -1,0 +1,174 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.content{
+    display: flex;
+}
+
+.wrapper{
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.button {
+    appearance: none;
+    background: none;
+    border: none;
+    font-family: inherit;
+}
+
+.card {
+    /* width: 100%; */
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: -5px 5px 5px -5px rgba(0, 0, 0, .25);
+}
+
+@media screen and (max-width: 600px) {
+
+  .title-with-tags h2 {
+    margin-bottom: 20px;
+  }
+}
+.no-padding { padding: 0; }
+
+
+.form-body { 
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-body.big {
+  max-width: 800px;
+}
+
+.form-body .grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  margin-bottom: 20px;
+}
+
+.form-body .grid.inline {
+  display: inline-grid;
+  align-items: baseline;
+}
+
+.form-section {
+  margin: 70px auto;
+}
+
+.form-body label,
+.form-body input[type="text"],
+.form-body input[type="email"],
+.form-body input[type="phone"],
+.form-body input[type="tel"],
+.form-body input[type="password"],
+.form-body textarea { 
+  width: 100%; 
+  display: block;
+}
+
+.form-body label.required:after {
+  content: " *";
+  color: var(--color-error);
+  font-size: .65em;
+}
+
+.form-body label:not(:first-child) { margin-top: 20px; }
+
+.form-body select,
+.form-body input[type="text"],
+.form-body input[type="email"],
+.form-body input[type="phone"],
+.form-body input[type="tel"],
+.form-body input[type="password"] {
+  height: 40px;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;  
+}
+
+.form-body textarea {
+  height: 200px;
+  resize: none;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.form-body select { width: 100%;} 
+
+
+.form-body textarea, 
+.form-body input[type="text"],
+.form-body input[type="email"],
+.form-body input[type="phone"],
+.form-body input[type="tel"],
+.form-body input[type="password"]   {
+  appearance: none;
+  border: 1px solid #e0e0e0;  
+}
+
+@media screen and (max-width: 600px) {
+  .form-body .grid {
+    grid-auto-flow: row;
+  }
+  
+}
+
+.card .loader {
+  max-height: none;
+  margin: auto;
+  min-height: 250px;
+}
+
+.error {
+  font-family: "Poppins",sans-serif;
+  color: rgb(255, 114, 114);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success {
+  font-family: "Poppins",sans-serif;
+  color: rgb(95, 175, 101);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeInFadeOut 3s 3s;
+}
+
+.message {
+  font-size: 1.25em;
+  margin: 30px auto;
+  color: #3f3d55;
+}
+
+.ml-0 { margin-left: 0 !important; }
+
+@keyframes fadeInFadeOut {
+  from {opacity: 1;}
+  to { opacity: 0;}
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper { width: 90%; }
+}
